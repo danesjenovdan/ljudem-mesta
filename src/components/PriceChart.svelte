@@ -191,7 +191,8 @@
 			>, da povečanje števila enot, ki se oddajajo na Airbnbju povzroči povečanje cen stanovanj in
 			najemnin.
 		</p>
-		<sub><a href="https://www.arvio.si/" target="_blank">Vir: Arvio</a></sub>
+		<sub>Vir podatkov cena m2: <a href="https://www.arvio.si/" target="_blank">Arvio</a></sub>
+		<sub>Vir podatkov Airbnb oglasi: <a href="https://www.airdna.co/" target="_blank">Airdna</a></sub>
 	</div>
 	<div class="chart-section">
 		<div class="chart-container-outer">
