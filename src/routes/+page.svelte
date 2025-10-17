@@ -134,6 +134,26 @@
 		<span>Naše stališče</span>
 		<Arrow />
 	</a>
+	<div class="what-about">
+		<p class="section-subtitle">
+			S Pravno mrežo za varstvo demokracije smo pripravili mnenje glede regulacije oddajanja
+			stanovanj v kratkotrajni najem. Izpostavili smo potrebo po strožjih ukrepih na tem področju in
+			dodali priporočila, s katerimi bi novi Zakon o gostinstvu zagotovil, da bodo stanovanja spet
+			namenjena bivanju – ne pa dobičku.
+		</p>
+		<p class="section-subtitle">
+			Preberi naše stališče na predlog zakona in tudi ti sodeluj v javni razpravi!
+		</p>
+	</div>
+	<a href="https://pravna-mreza.si/objave/mnenje-glede-regulacije-oddajanja-stanovanj-v-kratkotrajni-najem/" target="_blank" class="shadowed-card shadowed-button stalisce-btn">
+		<div class="circle">
+			<div class="stalisce-icon">
+				<Stalisce />
+			</div>
+		</div>
+		<span>Naše stališče</span>
+		<Arrow />
+	</a>
 </div>
 <div class="liberate-section">
 	<div class="liberate-container">
