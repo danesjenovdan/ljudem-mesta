@@ -1,0 +1,21 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    ports:
+      - 5173:5173
+    environment:
+      - VITE_SUPABASE_URL=http://not-real:54321
+      - VITE_SUPABASE_API_KEY=poop
+    volumes:
+      - ./src:/app/src:delegated,rw
+      - ./static:/app/static:delegated,rw
+      - ./database.types.ts:/app/database.types.ts:delegated,rw
+      - ./.eslintignore:/app/.eslintignore:delegated,rw
+      - ./.eslintrc.cjs:/app/.eslintrc.cjs:delegated,rw
+      - ./.prettierignore:/app/.prettierignore:delegated,rw
+      - ./.prettierrc:/app/.prettierrc:delegated,rw
+      - ./svelte.config.js:/app/svelte.config.js:delegated,rw
+      - ./tsconfig.json:/app/tsconfig.json:delegated,rw
+      - ./vite.config.ts:/app/vite.config.ts:delegated,rw
