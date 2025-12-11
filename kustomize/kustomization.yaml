@@ -8,4 +8,4 @@ resources:
 images:
   - name: airbnb-pejt-domov
     newName: rg.fr-par.scw.cloud/djnd/airbnb-pejt-domov-aka-ljudem-mesta
-    newTag: "latest"
+    newTag: 'cc129341a34b1b3aee4c7d055716814d8a054860'
