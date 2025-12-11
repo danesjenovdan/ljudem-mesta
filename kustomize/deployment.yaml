@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: airbnb-pejt-domov
+  labels:
+    app: airbnb-pejt-domov
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: airbnb-pejt-domov
+  template:
+    metadata:
+      labels:
+        app: airbnb-pejt-domov
+    spec:
+      containers:
+        - name: airbnb-pejt-domov
+          image: airbnb-pejt-domov
+          ports:
+            - containerPort: 3000
+          resources:
+            requests:
+              memory: 150Mi
+              cpu: 150m
+            limits:
+              memory: 150Mi
+              cpu: 150m

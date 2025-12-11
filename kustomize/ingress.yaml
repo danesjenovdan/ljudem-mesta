@@ -1,0 +1,23 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: airbnb-pejt-domov
+  annotations:
+    cert-manager.io/cluster-issuer: "letsencrypt-production"
+spec:
+  ingressClassName: nginx
+  tls:
+    - hosts:
+        - airbnb.lb.djnd.si
+      secretName: airbnb-pejt-domov-tls
+  rules:
+    - host: airbnb.lb.djnd.si
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: airbnb-pejt-domov
+                port:
+                  number: 3000
