@@ -5,14 +5,15 @@ metadata:
   annotations:
     cert-manager.io/cluster-issuer: "letsencrypt-production"
 spec:
-  ingressClassName: nginx
+  ingressClassName: traefik
   tls:
     - hosts:
-        - airbnb.lb.djnd.si
+        - airbnbpejtdomov.djnd.si
+        - airbnbpejtdomov.danesjenovdan.si
       secretName: airbnb-pejt-domov-tls
   rules:
-    - host: airbnb.lb.djnd.si
-      http:
+    - host: airbnbpejtdomov.djnd.si
+      http: &http_paths
         paths:
           - path: /
             pathType: Prefix
@@ -21,3 +22,5 @@ spec:
                 name: airbnb-pejt-domov
                 port:
                   number: 3000
+    - host: airbnbpejtdomov.danesjenovdan.si
+      http: *http_paths
